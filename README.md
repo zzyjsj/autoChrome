@@ -1,4 +1,4 @@
-## 动态网页爬虫golang版本
+## chromium爬虫
 
 ### 基本功能
 获取网页基本信息包块iframe,initUrl,html,title,desc,trueUrl
@@ -19,3 +19,5 @@ curl -X POST -i 'http://127.0.0.1:7999' --data '{"urls":["http://www.baidu.com",
 curl -X GET -i 'http://127.0.0.1:17999/num'
 {"currentNum":0,"pagePoolNum":3}
 ```
+### 使用
+直接执行exe 文件即可测试使用。默认会去查找或下载chromium。
