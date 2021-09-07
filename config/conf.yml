@@ -23,8 +23,6 @@ conf:
     maxNumToRestart: 5
 
   reqControl:
-    # url携带referer,允许，baidu,sogou,so
-    # 生成的加密url具体内部结构
+    # url携带referer,允许，baidu,sogou,空值表示不设置
     referer:
-      # name referer头,逗号分割 baidu,sogou,so，空值表示不设置
       name: "baidu"
