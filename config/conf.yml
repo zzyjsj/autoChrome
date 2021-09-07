@@ -1,0 +1,30 @@
+conf:
+  launcherConf:
+    # remoteWS: "ws://0.0.0.0:7317"
+    remoteWS: ""
+    userDataDir: "D:\\autoChrome\\udd"
+    env: "TZ=Asia/Shanghai"
+    proxy: ""
+    # 是否无头
+    headless: false
+    # 是否关闭沙箱
+    noSandBox: true
+    # 是否打开devtools
+    devtools: false
+
+  pageConf:
+    #页面超时15秒
+    timeout: 30
+    # bypass机器人检测
+    stealth: true
+    # pagePool 缓存数量
+    pagePoolNum: 3
+    # chrome一共打开多少次，重启chrome
+    maxNumToRestart: 5
+
+  reqControl:
+    # url携带referer,允许，baidu,sogou,so
+    # 生成的加密url具体内部结构
+    referer:
+      # name referer头,逗号分割 baidu,sogou,so，空值表示不设置
+      name: "baidu"
