@@ -14,10 +14,11 @@
 
 ```
 发送任务
-curl -X POST -i 'http://127.0.0.1:7999' --data '{"urls":["http://www.baidu.com","http://www.sodtjww.cn/"]}'
+curl -X POST -i 'http://127.0.0.1:7999' --data '{"urls":["http://www.baidu.com","http://www.sodtjww.cn/"],"refer":false}'
 获取当前chrome 状态
 curl -X GET -i 'http://127.0.0.1:17999/num'
 {"currentNum":0,"pagePoolNum":3}
 ```
 ### 使用
 直接执行exe 文件即可测试使用。默认会去查找或下载chromium。
+配置文件提供refer并不能启用自带refer,需要请求的时候带上 ```"refer":true```
